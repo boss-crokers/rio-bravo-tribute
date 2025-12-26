@@ -126,11 +126,20 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Sepia Mode Toggle
+// Sepia Mode Toggle with Persistence
 const sepiaToggle = document.getElementById('sepia-toggle');
+
+// 1. Check saved preference on load
+if (localStorage.getItem('sepiaMode') === 'true') {
+    document.body.classList.add('sepia-mode');
+    if (sepiaToggle) sepiaToggle.checked = true;
+}
+
+// 2. Listen for changes and save preference
 if (sepiaToggle) {
     sepiaToggle.addEventListener('change', () => {
-        document.body.classList.toggle('sepia-mode');
+        const isSepia = document.body.classList.toggle('sepia-mode');
+        localStorage.setItem('sepiaMode', isSepia);
     });
 }
 
