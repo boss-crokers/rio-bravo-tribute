@@ -842,6 +842,18 @@ footer {
     font-family: 'Rye', cursive;
 }
 
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     nav {
