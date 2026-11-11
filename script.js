@@ -175,7 +175,6 @@ document.addEventListener('click', (e) => {
 
 
 // Fan Poll Logic
-// Faked initial stats for demonstration
 const initialVotes = {
     'Chance': 35,
     'Dude': 42,
@@ -183,71 +182,85 @@ const initialVotes = {
     'Colorado': 5
 };
 
+function showResults() {
+    const total = Object.values(initialVotes).reduce((a, b) => a + b, 0);
+    const buttons = document.querySelectorAll('.poll-btn');
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+        btn.style.cursor = 'default';
+
+        const char = btn.dataset.candidate || '';
+        if (initialVotes[char]) {
+            const percent = Math.round((initialVotes[char] / total) * 100);
+
+            const bar = btn.querySelector('.poll-bar');
+            if (bar) bar.style.width = `${percent}%`;
+
+            const percentSpan = btn.querySelector('.poll-percent');
+            if (percentSpan) percentSpan.textContent = `${percent}%`;
+        }
+    });
+}
+
 function votePoll(choice) {
-    // Prevent multiple votes in session (simple check)
     if (localStorage.getItem('voted')) {
         alert("You've already voted!");
         showResults();
         return;
     }
 
-    // Increment selection (locally)
-    initialVotes[choice]++;
-    localStorage.setItem('voted', 'true');
+    if (initialVotes[choice] !== undefined) {
+        initialVotes[choice]++;
+    }
+    localStorage.setItem('voted', choice);
 
-    // Show Thank You message
     const msg = document.getElementById('poll-message');
-    msg.style.opacity = '1';
-    msg.textContent = `You voted for ${choice}!`;
+    if (msg) {
+        msg.style.opacity = '1';
+        msg.textContent = `You voted for ${choice}!`;
+    }
 
     showResults();
 }
 
-function showResults() {
-    const total = Object.values(initialVotes).reduce((a, b) => a + b, 0);
-    const buttons = document.querySelectorAll('.poll-btn');
-
-    buttons.forEach(btn => {
-        // Disable click
-        btn.onclick = null;
-        btn.style.cursor = 'default';
-
-        // Get character name from onclick attribute or inferred
-        // This is a simple mapping for the demo
-        let char = '';
-        if (btn.innerText.includes('Chance')) char = 'Chance';
-        if (btn.innerText.includes('Dude')) char = 'Dude';
-        if (btn.innerText.includes('Stumpy')) char = 'Stumpy';
-        if (btn.innerText.includes('Colorado')) char = 'Colorado';
-
-        if (initialVotes[char]) {
-            const percent = Math.round((initialVotes[char] / total) * 100);
-
-            // Animate Bar
-            const bar = btn.querySelector('.poll-bar');
-            bar.style.width = `${percent}%`;
-
-            // Update Text
-            const percentSpan = btn.querySelector('.poll-percent');
-            percentSpan.textContent = `${percent}%`;
+// Attach event listeners to poll buttons and restore prior state if voted
+document.querySelectorAll('.poll-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const choice = btn.dataset.candidate;
+        if (choice) {
+            votePoll(choice);
         }
     });
-}
-// Gunshot Interaction for Gallery
-const gunshotSound = new Audio('assets/gunshot.mp3');
-gunshotSound.preload = 'auto';
+});
 
-// Pre-load gunshot sounds for variety
-const gunshotPool = [];
-for (let i = 0; i < 5; i++) {
-    const sound = new Audio('assets/gunshot.mp3');
-    sound.volume = 0.5;
-    gunshotPool.push(sound);
+const priorVote = localStorage.getItem('voted');
+if (priorVote) {
+    const msg = document.getElementById('poll-message');
+    if (msg) {
+        msg.style.opacity = '1';
+        msg.textContent = priorVote === 'true' ? 'Thanks for voting!' : `You voted for ${priorVote}!`;
+    }
+    showResults();
 }
 
+// Gunshot Interaction for Gallery (lazy-loaded audio pool)
+let gunshotPool = null;
 let poolIndex = 0;
 
+function initGunshotPool() {
+    if (gunshotPool) return;
+    gunshotPool = [];
+    for (let i = 0; i < 4; i++) {
+        const sound = new Audio('assets/gunshot.mp3');
+        sound.volume = 0.5;
+        gunshotPool.push(sound);
+    }
+}
+
 function playGunshot(volume = 0.5) {
+    initGunshotPool();
+    if (!gunshotPool || gunshotPool.length === 0) return;
     const sound = gunshotPool[poolIndex];
     sound.currentTime = 0;
     sound.volume = volume;

@@ -23,6 +23,7 @@
     <!-- Canonical & Favicon -->
     <link rel="canonical" href="https://riobravo1959.com/" />
     <link rel="icon" type="image/png" href="assets/gear_colt.png">
+    <link rel="preload" as="image" href="assets/rio_bravo_hero.webp" fetchpriority="high">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -69,7 +70,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;700&family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=31">
+    <link rel="stylesheet" href="style.css?v=32">
 </head>
 
 <body>
@@ -101,7 +102,7 @@
         </div>
     </nav>
 
-    <header class="hero" data-parallax="0.5" style="background-image: url('assets/rio_bravo_hero.jpg');">
+    <header class="hero" data-parallax="0.5" style="background-image: url('assets/rio_bravo_hero.webp');">
         <div class="hero-overlay"></div>
         <h1 class="fade-in">RIO BRAVO</h1>
         <p class="fade-in">"They fought back to back... No quarter given... No quarter asked... No way in... No way
@@ -130,7 +131,7 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/cast_john_wayne.jpg" alt="John Wayne as John T. Chance">
+                        <img src="assets/cast_john_wayne.webp" alt="John Wayne as John T. Chance" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>John Wayne</h3>
                             <p>Sheriff John T. Chance</p>
@@ -153,7 +154,7 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/cast_dean_martin.jpg" alt="Dean Martin as Dude">
+                        <img src="assets/cast_dean_martin.webp" alt="Dean Martin as Dude" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Dean Martin</h3>
                             <p>Dude ("Borrachón")</p>
@@ -175,7 +176,7 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/cast_ricky_nelson.jpg" alt="Ricky Nelson as Colorado Ryan">
+                        <img src="assets/cast_ricky_nelson.webp" alt="Ricky Nelson as Colorado Ryan" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Ricky Nelson</h3>
                             <p>Colorado Ryan</p>
@@ -197,7 +198,7 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/cast_angie_dickinson.jpg" alt="Angie Dickinson as Feathers">
+                        <img src="assets/cast_angie_dickinson.webp" alt="Angie Dickinson as Feathers" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Angie Dickinson</h3>
                             <p>Feathers</p>
@@ -222,28 +223,28 @@
     <section id="stills" class="fade-in">
         <h2 class="section-title">4K Stills</h2>
         <div class="gallery">
-            <div class="gallery-item" data-src="assets/rio_bravo_hero.jpg"
+            <div class="gallery-item" data-src="assets/rio_bravo_hero.webp"
                 data-caption="Sheriff Chance and Dude at Sunset">
-                <img src="assets/rio_bravo_hero.jpg" alt="Sheriff Chance and Dude at Sunset">
+                <img src="assets/rio_bravo_hero.webp" alt="Sheriff Chance and Dude at Sunset" width="600" height="400" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-item" data-src="assets/still_jailhouse.jpg"
+            <div class="gallery-item" data-src="assets/still_jailhouse.webp"
                 data-caption="The Defiant Stand in the Jailhouse">
-                <img src="assets/still_jailhouse.jpg" alt="The Defiant Stand in the Jailhouse">
+                <img src="assets/still_jailhouse.webp" alt="The Defiant Stand in the Jailhouse" width="600" height="400" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-item" data-src="assets/still_saloon.jpg" data-caption="Tense Saloon Confrontation">
-                <img src="assets/still_saloon.jpg" alt="Tense Saloon Confrontation">
+            <div class="gallery-item" data-src="assets/still_saloon.webp" data-caption="Tense Saloon Confrontation">
+                <img src="assets/still_saloon.webp" alt="Tense Saloon Confrontation" width="600" height="400" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-item focus-top" data-src="assets/cast_john_wayne.jpg"
+            <div class="gallery-item focus-top" data-src="assets/cast_john_wayne.webp"
                 data-caption="John Wayne as Sheriff John T. Chance">
-                <img src="assets/cast_john_wayne.jpg" alt="John Wayne as Chance">
+                <img src="assets/cast_john_wayne.webp" alt="John Wayne as Chance" width="600" height="400" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-item focus-top" data-src="assets/cast_dean_martin.jpg"
+            <div class="gallery-item focus-top" data-src="assets/cast_dean_martin.webp"
                 data-caption="Dean Martin as Dude ('Borrachón')">
-                <img src="assets/cast_dean_martin.jpg" alt="Dean Martin as Dude">
+                <img src="assets/cast_dean_martin.webp" alt="Dean Martin as Dude" width="600" height="400" loading="lazy" decoding="async">
             </div>
-            <div class="gallery-item" data-src="assets/cast_angie_dickinson.jpg"
+            <div class="gallery-item" data-src="assets/cast_angie_dickinson.webp"
                 data-caption="Angie Dickinson as Feathers">
-                <img src="assets/cast_angie_dickinson.jpg" alt="Angie Dickinson as Feathers">
+                <img src="assets/cast_angie_dickinson.webp" alt="Angie Dickinson as Feathers" width="600" height="400" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -283,7 +284,7 @@
     <section id="map" class="fade-in">
         <h2 class="section-title">Sheriff's Office & Town Map</h2>
         <div class="map-container">
-            <img src="assets/map_presidio.jpg" alt="Map of Presidio, Texas" class="map-image">
+            <img src="assets/map_presidio.webp" alt="Map of Presidio, Texas" class="map-image" width="1024" height="1024" loading="lazy" decoding="async">
             <div class="hotspot" style="top: 30%; left: 25%;"
                 data-tooltip="The Jailhouse: The stronghold where Chance holds Joe Burdette."></div>
             <div class="hotspot" style="top: 30%; left: 70%;"
@@ -301,8 +302,8 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/gear_winchester.png" alt="Winchester 1892"
-                            style="object-fit: contain; padding: 20px;">
+                        <img src="assets/gear_winchester.webp" alt="Winchester 1892"
+                            style="object-fit: contain; padding: 20px;" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Winchester 1892</h3>
                             <p>John T. Chance's Rifle</p>
@@ -324,8 +325,8 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/gear_colt.png" alt="Colt Single Action Army"
-                            style="object-fit: contain; padding: 20px;">
+                        <img src="assets/gear_colt.webp" alt="Colt Single Action Army"
+                            style="object-fit: contain; padding: 20px;" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Colt Peacemaker</h3>
                             <p>Dude's Revolver</p>
@@ -347,8 +348,8 @@
             <div class="cast-card">
                 <div class="cast-card-inner">
                     <div class="cast-card-front">
-                        <img src="assets/gear_shotgun.png" alt="Double-Barreled Shotgun"
-                            style="object-fit: contain; padding: 20px;">
+                        <img src="assets/gear_shotgun.webp" alt="Double-Barreled Shotgun"
+                            style="object-fit: contain; padding: 20px;" width="400" height="400" loading="lazy" decoding="async">
                         <div class="cast-info">
                             <h3>Sawed-Off Shotgun</h3>
                             <p>Stumpy's Equalizer</p>
@@ -375,22 +376,22 @@
         <div class="poll-container">
             <h3>Who is the real MVP of Rio Bravo?</h3>
             <div class="poll-options">
-                <button class="poll-btn" onclick="votePoll('Chance')">
+                <button class="poll-btn" data-candidate="Chance" aria-label="Vote for Sheriff Chance">
                     <span class="poll-text">Sheriff Chance</span>
                     <span class="poll-bar"></span>
                     <span class="poll-percent">0%</span>
                 </button>
-                <button class="poll-btn" onclick="votePoll('Dude')">
+                <button class="poll-btn" data-candidate="Dude" aria-label="Vote for Dude (Borrachón)">
                     <span class="poll-text">Dude (Borrachón)</span>
                     <span class="poll-bar"></span>
                     <span class="poll-percent">0%</span>
                 </button>
-                <button class="poll-btn" onclick="votePoll('Stumpy')">
+                <button class="poll-btn" data-candidate="Stumpy" aria-label="Vote for Stumpy">
                     <span class="poll-text">Stumpy</span>
                     <span class="poll-bar"></span>
                     <span class="poll-percent">0%</span>
                 </button>
-                <button class="poll-btn" onclick="votePoll('Colorado')">
+                <button class="poll-btn" data-candidate="Colorado" aria-label="Vote for Colorado">
                     <span class="poll-text">Colorado</span>
                     <span class="poll-bar"></span>
                     <span class="poll-percent">0%</span>
@@ -438,16 +439,16 @@
         <p style="text-align: center; max-width: 600px; margin: 0 auto 40px auto; font-size: 1.2rem;">Own a piece of
             cinema history. Experience the 4K restoration or stream it tonight.</p>
         <div class="watch-grid">
-            <a href="https://amzn.to/48RtVUQ" target="_blank" class="watch-btn amazon">
+            <a href="https://amzn.to/48RtVUQ" target="_blank" rel="noopener noreferrer" class="watch-btn amazon">
                 Buy 4K Blu-ray
                 <span class="sub-text">Amazon</span>
             </a>
             <a href="https://tv.apple.com/us/movie/rio-bravo/umc.cmc.3yv30y7r7v6g7u4n5v7y8y8y1" target="_blank"
-                class="watch-btn apple">
+                rel="noopener noreferrer" class="watch-btn apple">
                 Rent or Buy
                 <span class="sub-text">Apple TV</span>
             </a>
-            <a href="https://amzn.to/4p9zMcM" target="_blank" class="watch-btn prime">
+            <a href="https://amzn.to/4p9zMcM" target="_blank" rel="noopener noreferrer" class="watch-btn prime">
                 Stream Now
                 <span class="sub-text">Prime Video</span>
             </a>
@@ -466,14 +467,14 @@
 
 
 
-    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" aria-label="Close lightbox">&times;</span>
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <img src="" id="lightbox-img" alt="Enlarged view">
             <p id="lightbox-caption"></p>
         </div>
     </div>
-    <script src="script.js?v=31"></script>
+    <script src="script.js?v=32"></script>
 </body>
 
 </html>
