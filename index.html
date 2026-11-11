@@ -27,41 +27,119 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Rio Bravo (1959) - The Ultimate Fan Tribute">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://riobravo1959.com/">
     <meta property="og:title" content="Rio Bravo (1959) - The Ultimate Fan Tribute">
     <meta property="og:description"
-        content="Discover the legend. Interactive maps, 4K stills, and deep lore from the greatest hangout movie of all time.">
-    <meta property="og:image" content="https://riobravo1959.com/assets/rio_bravo_hero.jpg">
+        content="Discover the legend. Interactive maps, 4K stills, cast lore, weapons guide, and behind-the-scenes trivia from Howard Hawks' Western masterpiece starring John Wayne and Dean Martin.">
+    <meta property="og:image" content="https://riobravo1959.com/assets/rio_bravo_hero.webp">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="Rio Bravo (1959) starring John Wayne and Dean Martin">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://riobravo1959.com/">
     <meta property="twitter:title" content="Rio Bravo (1959) - The Ultimate Fan Tribute">
     <meta property="twitter:description"
-        content="Discover the legend. Interactive maps, 4K stills, and deep lore from the greatest hangout movie of all time.">
-    <meta property="twitter:image" content="https://riobravo1959.com/assets/rio_bravo_hero.jpg">
+        content="Discover the legend. Interactive maps, 4K stills, cast lore, weapons guide, and behind-the-scenes trivia from Howard Hawks' Western masterpiece.">
+    <meta property="twitter:image" content="https://riobravo1959.com/assets/rio_bravo_hero.webp">
+    <meta property="twitter:image:alt" content="Rio Bravo (1959) starring John Wayne and Dean Martin">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Movie",
-      "name": "Rio Bravo",
-      "image": "https://riobravo1959.com/assets/rio_bravo_hero.jpg",
-      "director": {
-        "@type": "Person",
-        "name": "Howard Hawks"
-      },
-      "actor": [
-        { "@type": "Person", "name": "John Wayne" },
-        { "@type": "Person", "name": "Dean Martin" },
-        { "@type": "Person", "name": "Ricky Nelson" },
-        { "@type": "Person", "name": "Angie Dickinson" },
-        { "@type": "Person", "name": "Walter Brennan" }
-      ],
-      "datePublished": "1959-03-18",
-      "genre": "Western",
-      "description": "Sheriff John T. Chance and his ragtag team hold a murderer in jail against a powerful businessman's private army."
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://riobravo1959.com/#website",
+          "url": "https://riobravo1959.com/",
+          "name": "Rio Bravo (1959) - Fan Tribute & Ultimate Guide",
+          "description": "The definitive fan tribute to Howard Hawks' 1959 Western masterpiece Rio Bravo starring John Wayne, Dean Martin, Ricky Nelson, and Angie Dickinson.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Movie",
+          "@id": "https://riobravo1959.com/#movie",
+          "name": "Rio Bravo",
+          "alternateName": "Howard Hawks' Rio Bravo",
+          "image": "https://riobravo1959.com/assets/rio_bravo_hero.webp",
+          "datePublished": "1959-03-18",
+          "duration": "PT141M",
+          "genre": ["Western", "Drama", "Action"],
+          "director": {
+            "@type": "Person",
+            "name": "Howard Hawks"
+          },
+          "musicBy": {
+            "@type": "Person",
+            "name": "Dimitri Tiomkin"
+          },
+          "author": [
+            { "@type": "Person", "name": "Jules Furthman" },
+            { "@type": "Person", "name": "Leigh Brackett" },
+            { "@type": "Person", "name": "B.H. McCampbell" }
+          ],
+          "actor": [
+            { "@type": "Person", "name": "John Wayne", "jobTitle": "Sheriff John T. Chance" },
+            { "@type": "Person", "name": "Dean Martin", "jobTitle": "Dude ('Borrachón')" },
+            { "@type": "Person", "name": "Ricky Nelson", "jobTitle": "Colorado Ryan" },
+            { "@type": "Person", "name": "Angie Dickinson", "jobTitle": "Feathers" },
+            { "@type": "Person", "name": "Walter Brennan", "jobTitle": "Stumpy" },
+            { "@type": "Person", "name": "Ward Bond", "jobTitle": "Pat Wheeler" },
+            { "@type": "Person", "name": "John Russell", "jobTitle": "Nathan Burdette" }
+          ],
+          "description": "Sheriff John T. Chance and his ragtag team of defenders hold a ruthless murderer in jail against a powerful cattle baron's private army in Presidio, Texas."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://riobravo1959.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where was Rio Bravo filmed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While set in the Texas border town of Presidio, Rio Bravo was filmed primarily at Old Tucson Studios in Tucson, Arizona."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why did Howard Hawks and John Wayne make Rio Bravo as a response to High Noon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Director Howard Hawks and star John Wayne considered 1952's High Noon un-American for depicting a sheriff desperately begging townspeople for help. They created Rio Bravo to show a professional lawman who refuses amateur help and holds the line with only loyal, capable allies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What songs are sung in Rio Bravo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dean Martin and Ricky Nelson perform 'My Rifle, My Pony, and Me' and 'Cindy' (joined by Walter Brennan on harmonica) in the jailhouse scene. The score also famously features Dimitri Tiomkin's bugle call 'El Degüello'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What rifle does John Wayne use in Rio Bravo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "John Wayne uses a custom Winchester Model 1892 carbine chambered in .44-40 Winchester featuring an enlarged lever loop for spin-cocking."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does the bugle call 'El Degüello' mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "'El Degüello' is a traditional Spanish bugle march meaning 'the slitting of the throat' or 'no quarter given'. Santa Anna played it at the Alamo, and Nathan Burdette uses it to psychologically intimidate the deputies in Rio Bravo."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
 
@@ -70,7 +148,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;700&family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=34">
+    <link rel="stylesheet" href="style.css?v=35">
 </head>
 
 <body>
@@ -92,6 +170,7 @@
             <a href="#map">Map</a>
             <a href="#gear">Gear</a>
             <a href="#quotes">Quotes</a>
+            <a href="#faq">FAQ</a>
             <div class="toggle-container">
                 <label class="switch">
                     <input type="checkbox" id="sepia-toggle">
@@ -431,6 +510,42 @@
                 <p class="quote-author">Nathan Burdette</p>
                 <p class="quote-context">To Dude, revealing his manipulative nature.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="faq" class="fade-in">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary class="faq-question">Where was Rio Bravo filmed?</summary>
+                <div class="faq-answer">
+                    <p>While the story is set in the dusty border town of Presidio, Texas, <em>Rio Bravo</em> was filmed almost entirely on location at <strong>Old Tucson Studios</strong> in Tucson, Arizona. The dusty main street, the brick jailhouse, and the Alamo Hotel were authentic Western sets built specifically for cinematic Westerns.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Why did Howard Hawks and John Wayne make Rio Bravo as a response to High Noon?</summary>
+                <div class="faq-answer">
+                    <p>Director Howard Hawks and John Wayne strongly disliked the 1952 film <em>High Noon</em>, viewing Gary Cooper's character running around town begging civilians for help as un-American and unprofessional. In response, they made <em>Rio Bravo</em> to showcase an iron-willed sheriff who refuses amateur help, taking a stand with only skilled, loyal professionals.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">What songs are sung in Rio Bravo?</summary>
+                <div class="faq-answer">
+                    <p>The film features two beloved songs performed during the famous jailhouse interlude: <strong>"My Rifle, My Pony, and Me"</strong> (composed by Dimitri Tiomkin with lyrics by Paul Francis Webster, sung by Dean Martin and Ricky Nelson) and <strong>"Cindy"</strong> (featuring Martin, Nelson, and Walter Brennan on harmonica). Dimitri Tiomkin's score also prominently features the ominous Mexican bugle charge <strong>"El Degüello"</strong>.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">What rifle does John Wayne use in Rio Bravo?</summary>
+                <div class="faq-answer">
+                    <p>Sheriff John T. Chance wields a customized <strong>Winchester Model 1892</strong> carbine chambered in .44-40 Winchester. The rifle is famous for its enlarged lever loop, allowing Wayne to spin-cock the firearm smoothly on screen.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">What does the bugle call "El Degüello" mean?</summary>
+                <div class="faq-answer">
+                    <p><strong>"El Degüello"</strong> is an old Spanish military bugle call that translates literally as "the slitting of the throat," historically signifying "no quarter" (no mercy and no prisoners taken). It was famously ordered by Mexican General Santa Anna during the 1836 siege of the Alamo, and Nathan Burdette's hired band plays it through the night in <em>Rio Bravo</em> to terrorize the deputies.</p>
+                </div>
+            </details>
         </div>
     </section>
 

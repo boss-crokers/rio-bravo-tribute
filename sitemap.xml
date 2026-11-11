@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://riobravo1959.com/</loc>
-        <lastmod>2025-01-01</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2026-11-10</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/rio_bravo_hero.webp</image:loc>
+            <image:title>Rio Bravo (1959) Hero Still</image:title>
+            <image:caption>Sheriff John T. Chance and Dude at Sunset in Presidio, Texas</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/still_jailhouse.webp</image:loc>
+            <image:title>Rio Bravo Jailhouse Stand</image:title>
+            <image:caption>Sheriff Chance, Dude, Stumpy, and Colorado defending the Presidio jailhouse</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/still_saloon.webp</image:loc>
+            <image:title>Rio Bravo Saloon Confrontation</image:title>
+            <image:caption>Tense Western saloon confrontation scene in Rio Bravo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/cast_john_wayne.webp</image:loc>
+            <image:title>John Wayne as Sheriff John T. Chance</image:title>
+            <image:caption>John Wayne portrait as Sheriff John T. Chance in Rio Bravo (1959)</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/cast_dean_martin.webp</image:loc>
+            <image:title>Dean Martin as Dude</image:title>
+            <image:caption>Dean Martin as Dude Borrachón in Rio Bravo (1959)</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/cast_ricky_nelson.webp</image:loc>
+            <image:title>Ricky Nelson as Colorado Ryan</image:title>
+            <image:caption>Ricky Nelson as quick-draw gunslinger Colorado Ryan in Rio Bravo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/cast_angie_dickinson.webp</image:loc>
+            <image:title>Angie Dickinson as Feathers</image:title>
+            <image:caption>Angie Dickinson as Feathers in her breakout role in Rio Bravo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/map_presidio.webp</image:loc>
+            <image:title>Presidio Texas Town Map - Rio Bravo</image:title>
+            <image:caption>Illustrated map of Presidio, Texas showing the jailhouse, Alamo Hotel, and saloon</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/gear_winchester.webp</image:loc>
+            <image:title>Winchester 1892 Carbine - John Wayne</image:title>
+            <image:caption>John Wayne's custom large-loop lever Winchester 1892 from Rio Bravo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/gear_colt.webp</image:loc>
+            <image:title>Colt Single Action Army Peacemaker</image:title>
+            <image:caption>Dude's Colt .45 Peacemaker revolver from Rio Bravo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://riobravo1959.com/assets/gear_shotgun.webp</image:loc>
+            <image:title>Double-Barreled Sawed-Off Shotgun</image:title>
+            <image:caption>Stumpy's 12-gauge sawed-off shotgun from Rio Bravo</image:caption>
+        </image:image>
     </url>
 </urlset>
